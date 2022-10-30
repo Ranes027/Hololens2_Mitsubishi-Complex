@@ -2026,6 +2026,14 @@ PrefabInstance:
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[21].m_Target
       value: 
       objectReference: {fileID: 4420056575368595523}
+    - target: {fileID: 5616575778098331020, guid: 0551a3b0307d32b4681274cb9e9a70b1, type: 3}
+      propertyPath: iconSet
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
+    - target: {fileID: 5616575778098331020, guid: 0551a3b0307d32b4681274cb9e9a70b1, type: 3}
+      propertyPath: iconQuadTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: fd30487941b89c44d83061aa5520beb7, type: 3}
     - target: {fileID: 6834793228412591297, guid: 0551a3b0307d32b4681274cb9e9a70b1, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2128,7 +2136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2011149058368698232, guid: 1972507cb5a0dc746a8aee697b0f3913, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.354
       objectReference: {fileID: 0}
     - target: {fileID: 2011149058368698232, guid: 1972507cb5a0dc746a8aee697b0f3913, type: 3}
       propertyPath: m_LocalPosition.z
