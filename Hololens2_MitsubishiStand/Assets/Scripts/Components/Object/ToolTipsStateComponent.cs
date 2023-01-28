@@ -21,10 +21,7 @@ namespace MitubishiAR.Components
         {
             var toolTip = gameObject.GetComponent<ToolTipSpawner>();
 
-            if (toolTip.enabled == false)
-            {
-                
-            }
+            toolTip.enabled = !toolTip.enabled;
         }
     }
 }
