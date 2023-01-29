@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 79319572}
   - component: {fileID: 79319571}
   - component: {fileID: 79319570}
+  - component: {fileID: 79319577}
   m_Layer: 0
   m_Name: Scene2
   m_TagString: Untagged
@@ -373,16 +374,16 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212111473094866124}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 79319577}
+        m_TargetAssemblyTypeName: MitubishiAR.Components.LoadSceneComponent, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: TestScene
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -677,6 +678,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08709401, y: 0.025170248, z: 0.016}
   m_Center: {x: 0.011155397, y: 0.012521347, z: 0}
+--- !u!114 &79319577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79319568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a8089745ddef345bd24a5dd24b3b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &104774619
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,6 +3220,7 @@ GameObject:
   - component: {fileID: 1445225877}
   - component: {fileID: 1445225876}
   - component: {fileID: 1445225875}
+  - component: {fileID: 1445225882}
   m_Layer: 0
   m_Name: Scene3
   m_TagString: Untagged
@@ -3411,16 +3425,16 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212111473094866124}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1445225882}
+        m_TargetAssemblyTypeName: MitubishiAR.Components.LoadSceneComponent, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: AzureTestScene
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -3715,6 +3729,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08709401, y: 0.025170248, z: 0.016}
   m_Center: {x: 0.011155397, y: 0.012521347, z: 0}
+--- !u!114 &1445225882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445225873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a8089745ddef345bd24a5dd24b3b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1564832658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5929,16 +5955,16 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1212111473094866124}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8285083896660605681}
+        m_TargetAssemblyTypeName: MitubishiAR.Components.LoadSceneComponent, Assembly-CSharp
+        m_MethodName: LoadLevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: WorkScene
           m_BoolArgument: 0
         m_CallState: 2
   Events:
@@ -8294,6 +8320,7 @@ GameObject:
   - component: {fileID: 8285083896660605679}
   - component: {fileID: 7982416587250049606}
   - component: {fileID: 1785734340272787671}
+  - component: {fileID: 8285083896660605681}
   m_Layer: 0
   m_Name: Scene1
   m_TagString: Untagged
@@ -8411,6 +8438,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   routingTarget: {fileID: 1565440010075968589}
   InteractableOnClick: 1
+--- !u!114 &8285083896660605681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8285083896660605678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91a8089745ddef345bd24a5dd24b3b0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!65 &8285083896660605682
 BoxCollider:
   m_ObjectHideFlags: 0
