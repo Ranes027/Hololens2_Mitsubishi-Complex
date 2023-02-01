@@ -340,7 +340,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3238499239177969863, guid: e530ff439d06fce4f9e272a7d2419bfd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e530ff439d06fce4f9e272a7d2419bfd, type: 3}
 --- !u!1 &599120697
 GameObject:
@@ -689,7 +690,12 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4679913627179648988, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
+    - {fileID: 647262185490380397, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
+    - {fileID: 4679913627213182660, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
+    - {fileID: 647262185405461146, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
+    - {fileID: 4679913628774560307, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4b829e947ae32f846b74608a608dcb2a, type: 3}
 --- !u!1 &1706922267
 GameObject:
@@ -1342,7 +1348,19 @@ PrefabInstance:
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: AnchorModuleScript, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6348619739120179093, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 1158332362379351868, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 9105045473875022027, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 3914318292413976674, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 8065133700540917829, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 2874687994059204844, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 9113450202948871619, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 3922801911509935466, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 8731206706157969661, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 3540558403953926228, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 7611623660581143293, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
+    - {fileID: 2425195294772331092, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 5431ca14125da904d903da32d7da65e5, type: 3}
 --- !u!1 &2107604237
 GameObject:
