@@ -4,9 +4,9 @@ using UnityEngine;
 
 namespace MitubishiAR.Components
 {
-public class ShowObjectsComponent : MonoBehaviour
-{
-    [SerializeField] private GameObject[] _objects;
+    public class ShowObjectsComponent : MonoBehaviour
+    {
+        [SerializeField] private GameObject[] _objects;
 
         public void Show()
         {
@@ -17,6 +17,3 @@ public class ShowObjectsComponent : MonoBehaviour
         }
     }
 }
-
-
-
