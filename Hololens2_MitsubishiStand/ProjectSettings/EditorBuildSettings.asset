@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/WorkScene.unity
     guid: ad1ce89e1c7d3fc489118b4bad58e582
   - enabled: 1
+    path: Assets/Scenes/AnimationTestScene.unity
+    guid: 4cfa3523d6468c545bea5f24a9575014
+  - enabled: 1
     path: Assets/Scenes/AzureTestScene.unity
     guid: 25a45e8aeaec4714d8d01eea0684100a
   - enabled: 1
