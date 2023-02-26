@@ -3977,8 +3977,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   visualizationObject: {fileID: 2556082615819651482}
   interactableObject: {fileID: 0}
-  autoFollowAtDistance: 0
-  autoFollowDistance: 2
+  autoFollowAtDistance: 1
+  autoFollowDistance: 1
   autoFollowTransformTarget: {fileID: 0}
   autoFollowTriggered:
     m_PersistentCalls:
