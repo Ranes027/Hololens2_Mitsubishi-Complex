@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using Microsoft.Azure.SpatialAnchors;
 using Microsoft.Azure.SpatialAnchors.Unity;
+using RestSharp;
 
 #if WINDOWS_UWP
 using Windows.Storage;
@@ -21,7 +22,6 @@ public class AnchorModuleScript : MonoBehaviour
     [HideInInspector]
     // Anchor ID for anchor stored in Azure (provided by Azure) 
     public string currentAzureAnchorID = "";
-    public string removeAnchor = "Inactive";
 
     private SpatialAnchorManager cloudManager;
     private CloudSpatialAnchor currentCloudAnchor;
@@ -111,24 +111,21 @@ public class AnchorModuleScript : MonoBehaviour
     public async void CreateAzureAnchor(GameObject theObject)
     {
         Debug.Log("\nAnchorModuleScript.CreateAzureAnchor()");
-        removeAnchor = "Active";
 
         // Notify AnchorFeedbackScript
         OnCreateAnchorStarted?.Invoke();
 
         // First we create a native XR anchor at the location of the object in question
-        gameObject.CreateNativeAnchor();
+        theObject.CreateNativeAnchor();
 
         // Notify AnchorFeedbackScript
         OnCreateLocalAnchor?.Invoke();
-
-        await Task.Delay(1000);
 
         // Then we create a new local cloud anchor
         CloudSpatialAnchor localCloudAnchor = new CloudSpatialAnchor();
 
         // Now we set the local cloud anchor's position to the native XR anchor's position
-        localCloudAnchor.LocalAnchor =await theObject.FindNativeAnchor().GetPointer();
+        localCloudAnchor.LocalAnchor = await theObject.FindNativeAnchor().GetPointer();
 
         // Check to see if we got the local XR anchor pointer
         if (localCloudAnchor.LocalAnchor == IntPtr.Zero)
@@ -195,32 +192,21 @@ public class AnchorModuleScript : MonoBehaviour
 
     public void RemoveLocalAnchor(GameObject theObject)
     {
-#if !(UNITY_ANDROID || UNITY_IOS)
         Debug.Log("\nAnchorModuleScript.RemoveLocalAnchor()");
-        // Notify AnchorFeedbackScript
-        //OnRemoveLocalAnchor?.Invoke();
-        if (removeAnchor == "Inactive")
-        {
-            gameObject.DeleteNativeAnchor();
 
-            if (gameObject.FindNativeAnchor() == null)
-            {
-                Debug.Log("Local anchor deleted succesfully");
-            }
-            else
-            {
-                Debug.Log("Attempt to delete local anchor failed");
-            }
-        }
-        else
+        // Notify AnchorFeedbackScript
+        OnRemoveLocalAnchor?.Invoke();
+
+        theObject.DeleteNativeAnchor();
+
+        if (theObject.FindNativeAnchor() == null)
         {
             Debug.Log("Local anchor deleted succesfully");
         }
-#else
-
- Debug.Log("\nAnchorModuleScript.RemoveLocalAnchor()");
-
-#endif
+        else
+        {
+            Debug.Log("Attempt to delete local anchor failed");
+        }
     }
 
     public void FindAzureAnchor(string id = "")
@@ -319,9 +305,47 @@ public class AnchorModuleScript : MonoBehaviour
     {
         Debug.Log("\nAnchorModuleScript.ShareAzureAnchorID()");
 
-        StartCoroutine(ShareAzureAnchorIdToNetworkCoroutine());
+        string filename = "SharedAzureAnchorID." + publicSharingPin;
+        string path = Application.persistentDataPath;
+
+#if WINDOWS_UWP
+        StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+        path = storageFolder.Path + "/";           
+#endif
+
+        string filePath = Path.Combine(path, filename);
+        File.WriteAllText(filePath, currentAzureAnchorID);
+
+        Debug.Log($"Current Azure anchor ID '{currentAzureAnchorID}' successfully saved to path '{filePath}'");
+
+        try
+        {
+            var client = new RestClient("http://167.99.111.15:8090");
+
+            Debug.Log($"Connecting to network client '{client}'... please wait...");
+
+            var request = new RestRequest("/uploadFile.php", Method.POST);
+            request.AddHeader("Accept", "application/json");
+            request.AddHeader("Content-Type", "multipart/form-data");
+            request.AddFile("the_file", filePath);
+            request.AddParameter("replace_file", 1);  // Only needed if you want to upload a static file
+
+            var httpResponse = client.Execute(request);
+
+            Debug.Log("Uploading file... please wait...");
+
+            string json = httpResponse.Content.ToString();
+        }
+        catch (Exception ex)
+        {
+            Debug.Log(string.Format("Exception: {0}", ex.Message));
+            throw;
+        }
+
+        Debug.Log($"Current Azure anchor ID '{currentAzureAnchorID}' shared successfully");
     }
 
+    [Obsolete]
     public void GetAzureAnchorIdFromNetwork()
     {
         Debug.Log("\nAnchorModuleScript.GetSharedAzureAnchorID()");
@@ -365,19 +389,15 @@ public class AnchorModuleScript : MonoBehaviour
                     Debug.Log("Local anchor position successfully set to Azure anchor position");
 
                     //gameObject.GetComponent<UnityEngine.XR.WSA.WorldAnchor>().SetNativeSpatialAnchorPtr(currentCloudAnchor.LocalAnchor);
-
                     Pose anchorPose = Pose.identity;
                     anchorPose = currentCloudAnchor.GetPose();
 
-                    Debug.Log($"Setting object to anchor pose with position '{anchorPose.position}' and rotation '{anchorPose.rotation}'");
+                    Debug.Log($"Setting object to anchor pose with position '{anchorPose.position} and rotation '{anchorPose.rotation}'");
                     transform.position = anchorPose.position;
                     transform.rotation = anchorPose.rotation;
 
-                    removeAnchor = "Inactive";
-                    // Create a native anchor at the location of the object in question
                     gameObject.CreateNativeAnchor();
 
-                    // Notify AnchorFeedbackScript
                     OnCreateLocalAnchor?.Invoke();
                 }
 
@@ -414,40 +434,7 @@ public class AnchorModuleScript : MonoBehaviour
         }
     }
 
-    IEnumerator ShareAzureAnchorIdToNetworkCoroutine()
-    {
-        string filename = "SharedAzureAnchorID." + publicSharingPin;
-        string path = Application.persistentDataPath;
-
-#if WINDOWS_UWP
-        StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
-        path = storageFolder.Path + "/";           
-#endif
-
-        string filePath = Path.Combine(path, filename);
-        File.WriteAllText(filePath, currentAzureAnchorID);
-
-        Debug.Log($"Current Azure anchor ID '{currentAzureAnchorID}' successfully saved to path '{filePath}'");
-        Byte[] binaryData = File.ReadAllBytes(filePath);
-
-        WWWForm form = new WWWForm();
-        form.AddBinaryData("the_file", binaryData, Path.GetFileName(filePath), "text/plain");
-        form.AddField("replace_file", 1);
-
-        UnityWebRequest www = UnityWebRequest.Post("http://167.99.111.15:8090/uploadFile.php", form);
-        yield return www.SendWebRequest();
-
-        if (www.isHttpError || www.isNetworkError)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            Debug.Log($"Current Azure anchor ID '{currentAzureAnchorID}' shared successfully");
-        }
-    }
-
-
+    [Obsolete]
     IEnumerator GetSharedAzureAnchorIDCoroutine(string sharingPin)
     {
         string url = "http://167.99.111.15:8090/file-uploads/static/file." + sharingPin.ToLower();

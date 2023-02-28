@@ -132,7 +132,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   publicSharingPin: 1982734901747
   currentAzureAnchorID: 
-  removeAnchor: Inactive
 --- !u!114 &682285639285851287
 MonoBehaviour:
   m_ObjectHideFlags: 0
