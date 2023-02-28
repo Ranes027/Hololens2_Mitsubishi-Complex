@@ -44,7 +44,7 @@ PlayerSettings:
     duration: 2
   - logo: {fileID: 21300000, guid: dc518f9e1988c6540a4afe874f278a98, type: 3}
     duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 0}
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: dc518f9e1988c6540a4afe874f278a98, type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
   defaultScreenHeight: 768
@@ -138,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3
+  bundleVersion: 0.3.1
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -272,7 +272,14 @@ PlayerSettings:
   AndroidMinifyDebug: 0
   AndroidValidateAppBundleSize: 1
   AndroidAppBundleSizeToValidate: 150
-  m_BuildTargetIcons: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - serializedVersion: 2
+      m_Icon: {fileID: 2800000, guid: 29b5bdd17b4088641a55afd624f95aad, type: 3}
+      m_Width: 128
+      m_Height: 128
+      m_Kind: 0
   m_BuildTargetPlatformIcons: []
   m_BuildTargetBatching:
   - m_BuildTarget: Standalone
@@ -627,7 +634,12 @@ PlayerSettings:
   metroCertificateIssuer: Mining University
   metroCertificateNotAfter: 00edbadc125ada01
   metroApplicationDescription: Template_3D
-  wsaImages: {}
+  wsaImages:
+    65636: Assets/Textures/Icons/AppIcon/[50x50]ATPP_Logo.png
+    65661: Assets/Textures/Icons/AppIcon/[63x63]ATPP_Logo.png
+    65686: Assets/Textures/Icons/AppIcon/[75x75]ATPP_Logo.png
+    65736: Assets/Textures/Icons/AppIcon/[100x100]ATPP_Logo.png
+    65936: Assets/Textures/Icons/AppIcon/[200x200]ATPP_Logo.png
   metroTileShortName: MitsubishiAR
   metroTileShowName: 0
   metroMediumTileShowName: 0
