@@ -1,35 +1,5 @@
 {
   "dependencies": {
-    "com.microsoft.azure.object-anchors.runtime": {
-      "version": "file:MixedReality/com.microsoft.azure.object-anchors.runtime-0.25.0.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
-    "com.microsoft.azure.remote-rendering": {
-      "version": "file:MixedReality/com.microsoft.azure.remote-rendering-1.1.23.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {}
-    },
-    "com.microsoft.azure.spatial-anchors-sdk.core": {
-      "version": "file:MixedReality/com.microsoft.azure.spatial-anchors-sdk.core-2.13.3.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.unity.subsystemregistration": "1.0.6",
-        "com.unity.xr.arsubsystems": "4.0.8",
-        "com.unity.xr.arfoundation": "4.0.12"
-      }
-    },
-    "com.microsoft.azure.spatial-anchors-sdk.windows": {
-      "version": "file:MixedReality/com.microsoft.azure.spatial-anchors-sdk.windows-2.13.3.tgz",
-      "depth": 0,
-      "source": "local-tarball",
-      "dependencies": {
-        "com.microsoft.azure.spatial-anchors-sdk.core": "2.13.3"
-      }
-    },
     "com.unity.collab-proxy": {
       "version": "1.9.0",
       "depth": 0,
