@@ -251,8 +251,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 7658754944174425395, guid: 891f4188ad92c794c94ff15a853c4f2d, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 891f4188ad92c794c94ff15a853c4f2d, type: 3}
 --- !u!1 &1095360202
 GameObject:
@@ -421,34 +420,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1848348992 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7658754944174425393, guid: 891f4188ad92c794c94ff15a853c4f2d, type: 3}
-  m_PrefabInstance: {fileID: 821735772}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1848348993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1848348992}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf98dd1206224111a38765365e98e207, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lockCursorWhenFocusLocked: 1
-  setCursorInvisibleWhenFocusLocked: 0
-  maxGazeCollisionDistance: 10
-  raycastLayerMasks:
-  - serializedVersion: 2
-    m_Bits: 4294967291
-  stabilizer:
-    storedStabilitySamples: 60
-  gazeTransform: {fileID: 0}
-  minHeadVelocityThreshold: 0.5
-  maxHeadVelocityThreshold: 2
 --- !u!1001 &3227079989767443465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,89 +471,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2671153553316816874, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756700, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 650
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756702, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_CullTransparentMesh
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_fontSize
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_fontAsset
-      value: 
-      objectReference: {fileID: 11400000, guid: f137eba12ee10834cb19632437cfdb2e, type: 2}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_isRichText
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_sharedMaterial
-      value: 
-      objectReference: {fileID: 21433621844796372, guid: f137eba12ee10834cb19632437cfdb2e, type: 2}
-    - target: {fileID: 3227079989291756703, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_IsTextObjectScaleStatic
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3260029064897672633, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3584993445886408260, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0043999953
-      objectReference: {fileID: 0}
     - target: {fileID: 4330964006763405509, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
       propertyPath: m_Name
       value: MainMenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 4596256685307589976, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0043999953
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101746067721194603, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: maxDistance
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101746067721194603, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: minDistance
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6101746067721194603, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: fixedVerticalPosition
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6309083828256002290, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6787597329648560134, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0044
-      objectReference: {fileID: 0}
-    - target: {fileID: 7855995958185492381, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0043999953
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074344275863596570, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
