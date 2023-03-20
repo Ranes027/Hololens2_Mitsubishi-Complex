@@ -17,7 +17,11 @@ namespace MitubishiAR.Components
 
             if (obj != null)
             {
-                box.enabled = !box.enabled;
+                if(box.enabled == true)
+                {
+                    box.enabled = !box.enabled;
+                }
+                
                 obj.BoundsOverride = _targetObject.GetComponent<BoxCollider>();
             }
             else
