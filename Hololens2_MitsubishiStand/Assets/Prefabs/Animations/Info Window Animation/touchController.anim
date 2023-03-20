@@ -22,158 +22,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Automated control system
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Camera
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Controller
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Operator Panel
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Robot
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Safety carcass
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Table
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Workspaces
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -194,7 +42,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Controller/[UI] Info Controller Mini
+    path: Stand/Controller/[UI] Info Controller Mini
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves:
@@ -202,84 +50,84 @@ AnimationClip:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Camera
+    path: Stand/Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Automated control system
+    path: Stand/Workspaces
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Table
+    path: Stand/Table
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Workspaces
+    path: Stand/Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_/RV-3S_NO2-ARM/RV-3S_WRIST_
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Safety carcass
+    path: Stand/Robot
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Operator Panel
+    path: Stand/Camera
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_/RV-3S_NO2-ARM/RV-3S_WRIST_
+    path: Stand/Automated control system
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot
+    path: Stand/Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_
+    path: Stand/Operator Panel
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_
+    path: Stand/Robot/RV-3S_SHOULDER_
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_/RV-3S_NO2-ARM
+    path: Stand/Safety carcass
     classID: 23
     script: {fileID: 0}
   - curve:
     - time: 0
       value: {fileID: 2100000, guid: 588ef5bae1aaa234ba975a1cb8cb99b6, type: 2}
     attribute: m_Materials.Array.data[0]
-    path: Robot/RV-3S_SHOULDER_
+    path: Stand/Robot/RV-3S_SHOULDER_/RV-3S_NO1ARM_A1_/RV-3S_ELBOW_/RV-3S_NO2-ARM
     classID: 23
     script: {fileID: 0}
   m_SampleRate: 60
@@ -290,147 +138,91 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 323220923
+      path: 3458905386
       attribute: 2086281974
       script: {fileID: 0}
       typeID: 1
       customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 1018227507
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 61826378
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 694761164
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 434786784
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 3002113939
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 937992258
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 817229851
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 646133018
-      attribute: 2086281974
-      script: {fileID: 0}
-      typeID: 1
-      customType: 0
-      isPPtrCurve: 0
-    - serializedVersion: 2
-      path: 1018227507
+      path: 3274671187
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 323220923
+      path: 2311226550
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 937992258
+      path: 2211020815
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 817229851
+      path: 588235919
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 3002113939
+      path: 2915791277
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 694761164
+      path: 879359806
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 2006149825
+      path: 3841404085
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 434786784
+      path: 2937331715
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 987266860
+      path: 391369601
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 4057061673
+      path: 1159834998
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 2174054487
+      path: 2362079966
       attribute: 0
       script: {fileID: 0}
       typeID: 23
       customType: 21
       isPPtrCurve: 1
     - serializedVersion: 2
-      path: 3708886091
+      path: 3379664570
       attribute: 0
       script: {fileID: 0}
       typeID: 23
@@ -475,158 +267,6 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Automated control system
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Camera
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Controller
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Operator Panel
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Robot
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Safety carcass
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Table
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
-        value: 1
-        inSlope: Infinity
-        outSlope: Infinity
-        tangentMode: 103
-        weightedMode: 0
-        inWeight: 0
-        outWeight: 0
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_IsActive
-    path: Workspaces
-    classID: 1
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve:
-      - serializedVersion: 3
-        time: 0
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -647,7 +287,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: Controller/[UI] Info Controller Mini
+    path: Stand/Controller/[UI] Info Controller Mini
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []
@@ -655,7 +295,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.016666668
-    functionName: ChangeToolTipState
+    functionName: Action
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
