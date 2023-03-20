@@ -7,11 +7,11 @@ namespace MitubishiAR.Components
 {
     public class ActionController : MonoBehaviour
     {
-        [SerializeField] private UnityEvent _onEnterAnimation;
+        [SerializeField] private UnityEvent[] _onEnterAnimation;
 
-        public void Action()
-        {
-            _onEnterAnimation?.Invoke();
+        public void Action(int actionNumber)
+        {   
+            _onEnterAnimation[actionNumber]?.Invoke();
         }
     }
 }
