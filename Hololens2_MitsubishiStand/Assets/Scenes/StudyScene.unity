@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 235454188}
   m_Layer: 0
   m_Name: Objects
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -890,13 +890,13 @@ Rigidbody:
   m_GameObject: {fileID: 235454177}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
+  m_Drag: 1
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &235454188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2614,25 +2614,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
-    - target: {fileID: 1246820640305799989, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
       propertyPath: m_RootOrder
       value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2672,10 +2656,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1246820640305799993, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246820640448078773, guid: d1f2ea9b95865424abb2ae19e2478f2d, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -23831,7 +23811,7 @@ GameObject:
   - component: {fileID: 9151860409549458711}
   m_Layer: 0
   m_Name: Mitsubishi Robot
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24457,8 +24437,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3041915, y: 0.7981253, z: 1.1249248}
-  m_Center: {x: 0.636946, y: 0.9754071, z: 0.47887522}
+  m_Size: {x: 1.3041915, y: 0.8311937, z: 1.1249248}
+  m_Center: {x: 0.636946, y: 0.9588729, z: 0.47887522}
 --- !u!65 &4956947572811471088
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24965,7 +24945,7 @@ GameObject:
   - component: {fileID: 4956947572629404812}
   m_Layer: 0
   m_Name: CR-1D Controller
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43185,8 +43165,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.030805752, y: 0.029621217, z: 0.03558386}
-  m_Center: {x: -0.00003471429, y: -0.0038385305, z: 0.014471187}
+  m_Size: {x: 0.030805752, y: 0.029621217, z: 0.035809346}
+  m_Center: {x: -0.00003471429, y: -0.0038385312, z: 0.014358456}
 --- !u!114 &9151860409793649913
 MonoBehaviour:
   m_ObjectHideFlags: 0

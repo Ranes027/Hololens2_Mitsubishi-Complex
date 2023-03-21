@@ -471,9 +471,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3584993445886408260, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.0256
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139207463844905028, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: StudyScene
+      objectReference: {fileID: 0}
     - target: {fileID: 4330964006763405509, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
       propertyPath: m_Name
       value: MainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4596256685307589976, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.055600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 6787597329648560134, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.004399998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599210985657735001, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
