@@ -1,11 +1,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ReloadSceneComponent : MonoBehaviour
+namespace MitubishiAR.Components.Scene
 {
-    public void Reload()
+    public class ReloadSceneComponent : MonoBehaviour
     {
-        var scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
+        public void Reload()
+        {
+            var scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
     }
 }
+
