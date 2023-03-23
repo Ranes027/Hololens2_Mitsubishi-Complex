@@ -36,9 +36,12 @@ namespace MitubishiAR.Components
 
         private void SwitchBoxColliderState(GameObject gameObject)
         {
-            var box = gameObject.GetComponent<BoxCollider>();
+            if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false)
+            {
+                var box = gameObject.GetComponent<BoxCollider>();
 
-            box.enabled = !box.enabled;
+                box.enabled = !box.enabled;
+            }
         }
     }
 }
