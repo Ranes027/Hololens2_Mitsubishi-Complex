@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
 
 namespace MitubishiAR.Components
@@ -10,32 +11,55 @@ namespace MitubishiAR.Components
         [SerializeField] private GameObject _mainObject;
         [SerializeField] private GameObject _targetObject;
 
+        [SerializeField] private UnityEvent _action;
+        
         public void OverrideBounds()
         {
             var obj = _mainObject.GetComponent<BoundsControl>();
-            var box = _mainObject.GetComponent<BoxCollider>();
 
             if (obj != null)
             {
-                if (box.enabled == true)
-                {
-                    box.enabled = !box.enabled;
-                }
+                CheckScalingState();
+                CheckMainObjectCollider();
+                CheckOverridesState();
 
                 obj.BoundsOverride = _targetObject.GetComponent<BoxCollider>();
-
-                if (_mainObject == _targetObject)
-                {
-                    SceneConstants.Instance.SceneInfo.BoundsOverrides = false;
-                }
-                else
-                {
-                    SceneConstants.Instance.SceneInfo.BoundsOverrides = true;
-                }
             }
             else
             {
                 Debug.Log("Can't find BoundsControl!");
+            }
+        }
+
+        private void CheckScalingState()
+        {   
+            var bounds = _mainObject.GetComponent<BoundsControl>();
+
+            if(bounds.enabled == true)
+            {
+                _action?.Invoke();
+            }
+        }
+
+        private void CheckMainObjectCollider()
+        {
+            var mainBox = _mainObject.GetComponent<BoxCollider>();
+
+            if (mainBox.enabled == true)
+            {
+                mainBox.enabled = !mainBox.enabled;
+            }
+        }
+
+        private void CheckOverridesState()
+        {
+            if (_mainObject == _targetObject)
+            {
+                SceneConstants.Instance.SceneInfo.BoundsOverrides = false;
+            }
+            else
+            {
+                SceneConstants.Instance.SceneInfo.BoundsOverrides = true;
             }
         }
     }
