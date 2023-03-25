@@ -487,6 +487,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.055600002
       objectReference: {fileID: 0}
+    - target: {fileID: 6340501882570797034, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: m_text
+      value: WorldLockedPhysicsSample
+      objectReference: {fileID: 0}
     - target: {fileID: 6787597329648560134, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.004399998
@@ -494,6 +498,10 @@ PrefabInstance:
     - target: {fileID: 7599210985657735001, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7643438873321658309, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: WorldLockedPhysicsSample
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c0c6ee577a1f5946ab13b5ddf410db7, type: 3}
