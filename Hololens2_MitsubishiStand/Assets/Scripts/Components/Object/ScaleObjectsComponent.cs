@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MitubishiAR.Components
+namespace MitubishiAR.Components.Object
 {
     public class ScaleObjectsComponent : MonoBehaviour
     {

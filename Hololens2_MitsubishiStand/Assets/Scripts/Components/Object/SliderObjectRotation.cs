@@ -1,23 +1,28 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SliderObjectRotation : MonoBehaviour
+namespace MitubishiAR.Components.Object
 {
-    [SerializeField] private Slider _slider;
-    [SerializeField] private float _xAngleLimit = 180f;
-    [SerializeField] private float _yAngleLimit = 180f;
-    [SerializeField] private float _zAngleLimit = 180f;
-
-    void Start()
+    public class SliderObjectRotation : MonoBehaviour
     {
-        _slider.onValueChanged.AddListener(delegate
+        [SerializeField] private Slider _slider;
+        [SerializeField] private float _xAngleLimit = 180f;
+        [SerializeField] private float _yAngleLimit = 180f;
+        [SerializeField] private float _zAngleLimit = 180f;
+
+        void Start()
         {
-            RotateMe();
-        });
+            _slider.onValueChanged.AddListener(delegate
+            {
+                RotateMe();
+            });
+        }
+
+        public void RotateMe()
+        {
+            transform.localEulerAngles = new Vector3(_slider.value * _xAngleLimit, _slider.value * _yAngleLimit, _slider.value * _zAngleLimit);
+        }
     }
 
-    public void RotateMe()
-    {
-        transform.localEulerAngles = new Vector3(_slider.value * _xAngleLimit, _slider.value * _yAngleLimit, _slider.value * _zAngleLimit);
-    }
 }
+

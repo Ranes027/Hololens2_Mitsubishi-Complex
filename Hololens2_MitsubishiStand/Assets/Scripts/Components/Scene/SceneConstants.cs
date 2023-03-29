@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MitubishiAR
+namespace MitubishiAR.Components.Scene
 {
     [System.Serializable]
     public class SceneInfo

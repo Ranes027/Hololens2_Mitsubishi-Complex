@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
+using MitubishiAR.Components.Scene;
 
-namespace MitubishiAR.Components
+namespace MitubishiAR.Components.Object.States
 {
     public class ScalingStateComponent : MonoBehaviour
     {
