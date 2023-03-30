@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/StudyScene.unity
     guid: 24a8ce0b2a6928049806221afa74f6c4
   - enabled: 1
+    path: Assets/Scenes/WorldAnchors.unity
+    guid: 2fa1a02c53d4e1d4eb85826335c4ad2e
+  - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: e457ac0c077840e41a2fc179a2c02dc4
   - enabled: 1
