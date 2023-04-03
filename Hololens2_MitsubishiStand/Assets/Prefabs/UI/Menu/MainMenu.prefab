@@ -7774,6 +7774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1045059603301442392}
+  - component: {fileID: 7073087430123370294}
   - component: {fileID: 8488287168402298093}
   - component: {fileID: 6101746067721194603}
   - component: {fileID: 6078340559025975536}
@@ -7805,6 +7806,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7073087430123370294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4330964006763405509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8af458475116b4d920b038091482e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _general: {fileID: 1776365084402087504}
+  _login: {fileID: 4574572852820526988}
+  _settings: {fileID: 7859587638409578585}
+  _backButton: {fileID: 7880263069358111604}
 --- !u!114 &8488287168402298093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13584,7 +13601,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c020ebf06513a084caa57aa68a245a6b, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7073087430123370294}
+        m_TargetAssemblyTypeName: MitsubishiAR.UI.MainMenu, Assembly-CSharp
+        m_MethodName: Settings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events:
   - Event:
       m_PersistentCalls:
@@ -15356,7 +15385,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c020ebf06513a084caa57aa68a245a6b, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7073087430123370294}
+        m_TargetAssemblyTypeName: MitsubishiAR.UI.MainMenu, Assembly-CSharp
+        m_MethodName: Back
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events:
   - Event:
       m_PersistentCalls:
@@ -16965,7 +17006,19 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c020ebf06513a084caa57aa68a245a6b, type: 2}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7073087430123370294}
+        m_TargetAssemblyTypeName: MitsubishiAR.UI.MainMenu, Assembly-CSharp
+        m_MethodName: Login
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events:
   - Event:
       m_PersistentCalls:
