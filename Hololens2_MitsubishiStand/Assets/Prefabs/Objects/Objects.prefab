@@ -1241,7 +1241,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 257518337078511119}
-  - {fileID: 2002316087848147556}
   m_Father: {fileID: 257518338211955976}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2980,6 +2979,7 @@ Transform:
   m_Children:
   - {fileID: 564894445994485015}
   - {fileID: 564894444198257120}
+  - {fileID: 2002316087848147556}
   m_Father: {fileID: 564894446127344355}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6487,15 +6487,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002316087848147557}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -157, z: -29}
-  m_LocalScale: {x: 1999.999, y: 1999.9995, z: 1999.999}
+  m_LocalPosition: {x: -0.07111909, y: -0.22235347, z: -0.0049063265}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2002316088404015764}
   - {fileID: 2002316089344846346}
   - {fileID: 2002316088192396997}
   - {fileID: 2002316088755521300}
-  m_Father: {fileID: 257518337712336998}
-  m_RootOrder: 1
+  m_Father: {fileID: 564894444456292336}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &2002316087848147581
 BoxCollider:
@@ -17417,6 +17417,7 @@ Transform:
   m_Children:
   - {fileID: 7118169804150175072}
   - {fileID: 7118169805107540375}
+  - {fileID: 9139948687477361171}
   m_Father: {fileID: 7118169804285754004}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18514,7 +18515,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7389521505759598200}
-  - {fileID: 9139948687477361171}
   m_Father: {fileID: 7389521504336745855}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18707,8 +18707,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7389521504630447886}
   m_HandleRect: {fileID: 7389521504630447887}
   m_Direction: 2
-  m_Value: 1.0000015
-  m_Size: 0.9210338
+  m_Value: 0.99999845
+  m_Size: 0.92102456
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -19284,7 +19284,7 @@ RectTransform:
   m_Father: {fileID: 7389521504109283262}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.07896614}
+  m_AnchorMin: {x: 0, y: 0.07897532}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -19880,7 +19880,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.00016784668, y: 451.3065}
+  m_AnchoredPosition: {x: -0.00016784668, y: 451.3066}
   m_SizeDelta: {x: 0, y: 490}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &7389521505779915113
@@ -22960,15 +22960,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9139948687477361170}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -157, z: -28}
-  m_LocalScale: {x: 1999.999, y: 1999.9995, z: 1999.999}
+  m_LocalPosition: {x: -0.07111914, y: -0.22236861, z: -0.0044063716}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 9139948688024611555}
   - {fileID: 9139948686819539581}
   - {fileID: 9139948687145713330}
   - {fileID: 9139948687639533411}
-  m_Father: {fileID: 7389521503766831121}
-  m_RootOrder: 1
+  m_Father: {fileID: 7118169804887261063}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &9139948687477361162
 BoxCollider:
@@ -23863,7 +23863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4871796650051824474, guid: c44a1eb0513ab4149ac38441bd1bbb86, type: 3}
       propertyPath: autoFollowAtDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4871796650051824474, guid: c44a1eb0513ab4149ac38441bd1bbb86, type: 3}
       propertyPath: autoFollowTransformTarget
@@ -24053,7 +24053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 72924319326103985, guid: bdd23b132d37c814aa948b3f5b5febb4, type: 3}
       propertyPath: autoFollowAtDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 72924319326103986, guid: bdd23b132d37c814aa948b3f5b5febb4, type: 3}
       propertyPath: m_RootOrder
@@ -24625,7 +24625,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8381117322270186947, guid: c24c4733e61882146a41fa67fddd2e8f, type: 3}
       propertyPath: autoFollowAtDistance
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8381117323123611718, guid: c24c4733e61882146a41fa67fddd2e8f, type: 3}
       propertyPath: m_Mesh
