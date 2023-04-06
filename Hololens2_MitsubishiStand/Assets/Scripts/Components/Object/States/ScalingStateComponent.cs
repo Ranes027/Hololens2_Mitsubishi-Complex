@@ -10,6 +10,7 @@ namespace MitubishiAR.Components.Object.States
     public class ScalingStateComponent : MonoBehaviour
     {
         [SerializeField] private GameObject[] _objects;
+        [SerializeField] private bool _needToSwitchBoxState;
 
         public void ChangeScalingState()
         {
@@ -37,7 +38,8 @@ namespace MitubishiAR.Components.Object.States
 
         private void SwitchBoxColliderState(GameObject gameObject)
         {
-            if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false)
+
+            if (SceneConstants.Instance.SceneInfo.BoundsOverrides == false && _needToSwitchBoxState)
             {
                 var box = gameObject.GetComponent<BoxCollider>();
 
