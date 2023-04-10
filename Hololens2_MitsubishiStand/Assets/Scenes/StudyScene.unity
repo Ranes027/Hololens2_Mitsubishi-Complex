@@ -1168,6 +1168,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5191511671609326589}
     - target: {fileID: 4739064476066611314, guid: d5f9dcdc19ed2c54b874bc1360f13d0e, type: 3}
+      propertyPath: _needToSwitchBoxState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4739064476066611314, guid: d5f9dcdc19ed2c54b874bc1360f13d0e, type: 3}
       propertyPath: _objects.Array.data[0]
       value: 
       objectReference: {fileID: 235454177}
@@ -1195,6 +1199,10 @@ PrefabInstance:
       propertyPath: _objects.Array.data[3]
       value: 
       objectReference: {fileID: 45143957}
+    - target: {fileID: 4739064476493660824, guid: d5f9dcdc19ed2c54b874bc1360f13d0e, type: 3}
+      propertyPath: _needToSwitchBoxState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4739064476493660824, guid: d5f9dcdc19ed2c54b874bc1360f13d0e, type: 3}
       propertyPath: _objects.Array.data[0]
       value: 
