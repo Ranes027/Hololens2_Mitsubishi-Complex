@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace MitubishiAR.Components.Object
+namespace MitsubishiAR.Components.Object
 {
     public class ExitTriggerComponent : MonoBehaviour
     {

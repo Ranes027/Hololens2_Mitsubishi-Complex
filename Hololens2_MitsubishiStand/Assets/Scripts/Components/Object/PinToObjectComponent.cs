@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MitubishiAR.Components.Object
+namespace MitsubishiAR.Components.Object
 {
     public class PinToObjectComponent : MonoBehaviour
     {

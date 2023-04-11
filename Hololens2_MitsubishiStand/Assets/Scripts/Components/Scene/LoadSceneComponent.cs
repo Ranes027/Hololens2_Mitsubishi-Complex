@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace MitubishiAR.Components.Scene
+namespace MitsubishiAR.Components.Scene
 {
     public class LoadSceneComponent : MonoBehaviour
     {        

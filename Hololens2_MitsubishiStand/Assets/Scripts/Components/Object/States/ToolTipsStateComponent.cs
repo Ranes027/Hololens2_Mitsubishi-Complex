@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 
-namespace MitubishiAR.Components.Object.States
+namespace MitsubishiAR.Components.Object.States
 {
     public class ToolTipsStateComponent : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace MitubishiAR.Components.Object.States
+namespace MitsubishiAR.Components.Object.States
 {
     public class HideObjectsComponent : MonoBehaviour
     {

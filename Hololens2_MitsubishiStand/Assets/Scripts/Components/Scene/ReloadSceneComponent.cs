@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace MitubishiAR.Components.Scene
+namespace MitsubishiAR.Components.Scene
 {
     public class ReloadSceneComponent : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace MitubishiAR.Components.Animations
+namespace MitsubishiAR.Components.Animations
 {
     public class ActionController : MonoBehaviour
     {

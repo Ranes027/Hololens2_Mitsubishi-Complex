@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace MitubishiAR.Components.Object
+namespace MitsubishiAR.Components.Object
 {
     public class SliderObjectRotation : MonoBehaviour
     {

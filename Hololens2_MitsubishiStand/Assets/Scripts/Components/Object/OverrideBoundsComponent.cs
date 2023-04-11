@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
-using MitubishiAR.Components.Scene;
+using MitsubishiAR.Components.Scene;
 
-namespace MitubishiAR.Components.Object
+namespace MitsubishiAR.Components.Object
 {
     public class OverrideBoundsComponent : MonoBehaviour
     {

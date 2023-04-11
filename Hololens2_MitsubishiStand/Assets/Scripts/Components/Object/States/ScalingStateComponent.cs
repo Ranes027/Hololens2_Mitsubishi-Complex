@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
-using MitubishiAR.Components.Scene;
+using MitsubishiAR.Components.Scene;
 
-namespace MitubishiAR.Components.Object.States
+namespace MitsubishiAR.Components.Object.States
 {
     public class ScalingStateComponent : MonoBehaviour
     {
@@ -26,7 +26,15 @@ namespace MitubishiAR.Components.Object.States
         {
             var bounds = gameObject.GetComponent<BoundsControl>();
 
-            bounds.enabled = !bounds.enabled;
+            if (bounds == null)
+            {
+                var boundBox = gameObject.GetComponent<BoundingBox>();
+                boundBox.enabled = !boundBox.enabled;
+            }
+            else
+            {
+                bounds.enabled = !bounds.enabled;
+            }
         }
 
         private void SwitchObjectManipulatorState(GameObject gameObject)
