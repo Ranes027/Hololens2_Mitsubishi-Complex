@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
 
 namespace MitsubishiAR.UI
 {
@@ -44,21 +45,7 @@ namespace MitsubishiAR.UI
             }
         }
 
-        private void ChangeState(GameObject[] objects)
-        {
-            for (int i = 0; i < objects.Length; i++)
-            {
-                if (objects[i].activeSelf == true)
-                {
-                    objects[i].SetActive(false);
-                }
-                else
-                {
-                    objects[i].SetActive(true);
-                }
-            }
-
-        }
+        
     }
 
 }
