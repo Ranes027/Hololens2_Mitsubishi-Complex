@@ -18478,7 +18478,7 @@ GameObject:
   - component: {fileID: 238331122691301692}
   - component: {fileID: 1021203918874441668}
   m_Layer: 0
-  m_Name: Menu
+  m_Name: Menu [StudyScene]
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
