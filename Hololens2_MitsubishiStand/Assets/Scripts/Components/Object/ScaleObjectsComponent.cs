@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace MitsubishiAR.Components.Object
@@ -23,5 +21,4 @@ namespace MitsubishiAR.Components.Object
             }
         }
     }
-
 }

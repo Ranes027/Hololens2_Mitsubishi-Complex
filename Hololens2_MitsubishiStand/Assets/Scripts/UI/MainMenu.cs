@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using static MitsubishiAR.Components.Object.States.ActiveStateComponent;
 
@@ -44,8 +42,6 @@ namespace MitsubishiAR.UI
                 ChangeState(_objects);
             }
         }
-
-        
     }
 
 }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
@@ -40,7 +38,7 @@ namespace MitsubishiAR.Components.Object.States
         private void SwitchObjectManipulatorState(GameObject gameObject)
         {
             var manipulator = gameObject.GetComponent<ObjectManipulator>();
-
+            
             manipulator.enabled = !manipulator.enabled;
         }
 

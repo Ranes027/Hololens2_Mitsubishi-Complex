@@ -23,6 +23,5 @@ namespace MitsubishiAR.Components.Object
             transform.localEulerAngles = new Vector3(_slider.value * _xAngleLimit, _slider.value * _yAngleLimit, _slider.value * _zAngleLimit);
         }
     }
-
 }
 

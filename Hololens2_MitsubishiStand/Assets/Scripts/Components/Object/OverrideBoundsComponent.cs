@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Microsoft.MixedReality.Toolkit.UI.BoundsControl;
@@ -13,7 +11,7 @@ namespace MitsubishiAR.Components.Object
         [SerializeField] private GameObject _targetObject;
 
         [SerializeField] private UnityEvent _action;
-        
+
         public void OverrideBounds()
         {
             var obj = _mainObject.GetComponent<BoundsControl>();
@@ -33,10 +31,10 @@ namespace MitsubishiAR.Components.Object
         }
 
         private void CheckScalingState()
-        {   
+        {
             var bounds = _mainObject.GetComponent<BoundsControl>();
 
-            if(bounds.enabled == true)
+            if (bounds.enabled == true)
             {
                 _action?.Invoke();
             }

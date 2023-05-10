@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace MitsubishiAR.Components.Object.States
 {
     public class ActiveStateComponent : MonoBehaviour
-    {   
+    {
         [SerializeField] private GameObject[] _objects;
 
         public void Active()

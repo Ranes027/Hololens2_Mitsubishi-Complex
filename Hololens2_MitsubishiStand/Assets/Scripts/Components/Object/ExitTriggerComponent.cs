@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,12 +10,10 @@ namespace MitsubishiAR.Components.Object
 
         private void OnTriggerExit(Collider other)
         {
-            if(other.gameObject.CompareTag(_tag))
+            if (other.gameObject.CompareTag(_tag))
             {
                 _action?.Invoke(other.gameObject);
             }
         }
-
     }
-
 }
