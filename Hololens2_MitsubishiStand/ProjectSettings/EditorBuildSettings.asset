@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/WorldLocking.Examples/Scenes/WorldLockedPhysicsSample.unity
     guid: 77340a89908d678449b51949f87784a9
+  - enabled: 1
+    path: Assets/Scenes/SpacePinTest.unity
+    guid: 0045467a52ef67b4996fd9c91683f7af
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 962e7b400c390454f85ffcade39c2cfa, type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 682721bb1538d1142bd88daf2f7c4b37, type: 2}
