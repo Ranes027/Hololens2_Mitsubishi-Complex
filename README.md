@@ -18,12 +18,11 @@ This app deals with the augmented reality technologies and their implementation 
 
 **Unity Emulator**
 
-![UnityStand](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/62ff5b6f-6ea6-4448-be27-2b79cd9444ca)
+![UnityEmulator](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/ebecc4ff-16fa-42a5-852d-b7a95dae6767)
 
 **On the headset**
 
-![Ex1](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/14ba7dd9-5b46-4c66-afb8-93b6e4fe2bda)
-
+![OnHeadset](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/622f8756-d883-499b-8467-fc164e06558b)
 
 ## 💁 Contributing
 
