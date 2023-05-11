@@ -138,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3.1
+  bundleVersion: 0.3.2
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -626,14 +626,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Template3D
-  metroPackageVersion: 1.1.0.0
+  metroPackageName: MitsubishiComplexAR
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: Assets/WSATestCertificate.pfx
   metroCertificatePassword: '>;=='
   metroCertificateSubject: Mining University
   metroCertificateIssuer: Mining University
   metroCertificateNotAfter: 00edbadc125ada01
-  metroApplicationDescription: Template_3D
+  metroApplicationDescription: AR instruction for Mitsubishi Robotic Complex
   wsaImages:
     65636: Assets/Textures/Icons/AppIcon/[50x50]ATPP_Logo.png
     65661: Assets/Textures/Icons/AppIcon/[63x63]ATPP_Logo.png
