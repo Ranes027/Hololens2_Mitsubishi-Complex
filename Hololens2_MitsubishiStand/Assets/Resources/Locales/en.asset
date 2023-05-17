@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03ecdeb9be65ef64882fb48dd462f617, type: 3}
+  m_Name: en
+  m_EditorClassIdentifier: 
+  _url: https://docs.google.com/spreadsheets/d/e/2PACX-1vQAp6c2KL3VcOYafwqjvvqUzUeioCqeaubGmOKjFkKdM3ekIN5_RwVbNaBCZGuzY6XEAI2d5_s0vtEL/pub?gid=0&single=true&output=tsv
+  _localeItems:
+  - Key: MainMenu_G_Info
+    Value: "This software is designed to familiarize with augmented reality technologies
+      and consider the possibility of their implementation to work with the Mitsubishi
+      MELFA robotic complex.\r"
+  - Key: MainMenu_G_D1
+    Value: "The main stage for studying the structural composition of an industrial
+      robot.\r"
+  - Key: MainMenu_G_D2
+    Value: "This scene presents the main features of the MRTK SDK.\r"
+  - Key: MainMenu_G_S1
+    Value: "Virtual instruction for the robotic complex\r"
+  - Key: MainMenu_G_S2
+    Value: "Example of using MRTK\r"
+  - Key: MainMenu_S_lang
+    Value: 'Select a langauge:'
