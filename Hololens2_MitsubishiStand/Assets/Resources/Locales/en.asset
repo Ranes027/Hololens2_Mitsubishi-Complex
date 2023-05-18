@@ -28,4 +28,75 @@ MonoBehaviour:
   - Key: MainMenu_G_S2
     Value: "Example of using MRTK\r"
   - Key: MainMenu_S_lang
-    Value: 'Select a langauge:'
+    Value: "Select a langauge:\r"
+  - Key: MainMenu_L_Info
+    Value: "To log in, enter your username and password in the fields below.\r"
+  - Key: MainMenu_L_Login
+    Value: "Enter login...\r"
+  - Key: MainMenu_L_Password
+    Value: "Enter password...\r"
+  - Key: MainMenu_L_Confirm
+    Value: "Confirm\r"
+  - Key: MenuPrefab_Button_ScaleOn
+    Value: "Enable scaling\r"
+  - Key: MenuPrefab_Button_ScaleOff
+    Value: "Disable scaling\r"
+  - Key: MenuPrefab_Button_Robot
+    Value: "Robot\r"
+  - Key: MenuPrefab_Button_Controller
+    Value: "Controller\r"
+  - Key: MenuPrefab_Button_TipsOn
+    Value: "Enable tips\r"
+  - Key: MenuPrefab_Button_TipsOff
+    Value: "Disable tips\r"
+  - Key: HandMenuPrefab_BackToMainMenu
+    Value: "Back to main menu\r"
+  - Key: ToolTipPrefab
+    Value: "It's text from prefab\r"
+  - Key: ToolTip_Objects_Camera
+    Value: "Camera\r"
+  - Key: ToolTip_Objects_Controller
+    Value: "Controller\r"
+  - Key: ToolTip_Objects_OperatorPanel
+    Value: "Operator panel\r"
+  - Key: ToolTip_Objects_Robot
+    Value: "Robot\r"
+  - Key: ToolTip_Objects_AutomatedCS
+    Value: "Automated control system\r"
+  - Key: ToolTip_Objects_Workspaces
+    Value: Workspaces
+  - Key: ToolTip_Controller_Key
+    Value: "Operation mode switch. Manual for using the control panel and automatic
+      for performing operations from the controller or other equipment.\r"
+  - Key: ToolTip_Controller_RS232
+    Value: "RS-232 specification connector for connecting a personal computer.\r"
+  - Key: ToolTip_Controller_TB
+    Value: "Interface for connecting the control panel of the robot manipulator.\r"
+  - Key: ToolTip_Controller_ES
+    Value: "\"EMG.STOP\": Stops the manipulator in an emergency state by disconnecting
+      the servo.\r"
+  - Key: ToolTip_Controller_ServoOn
+    Value: "\"SVO ON\" button: turns on the servo power.\r"
+  - Key: ToolTip_Controller_ServoOff
+    Value: "\"SAVE OFF\" button: Turns off the servo power.\r"
+  - Key: ToolTip_Controller_Display
+    Value: "Display panel \"STATUS NUMBER\": displays the program number, alarm,
+      etc.\r"
+  - Key: ToolTip_Controller_Interfaces
+    Value: "USB interfaces and battery.\r"
+  - Key: ToolTip_Controller_End
+    Value: "\"END\" button: stops program execution on the last line or at the end
+      statement.\r"
+  - Key: ToolTip_Controller_UD
+    Value: "\"UP/DOWN\" buttons: allow you to scroll the information on the display
+      up or down.\r"
+  - Key: ToolTip_Controller_Reset
+    Value: "\"RESET\" button: resets the program execution in case of an error.\r"
+  - Key: ToolTip_Controller_CD
+    Value: "\"CHNG DISP\" button: Allows you to change the details displayed on the
+      display panel.\r"
+  - Key: ToolTip_Controller_Start
+    Value: "\"START\" button: used to start the robot control program.\r"
+  - Key: ToolTip_Controller_Stop
+    Value: '"STOP" button: stops the program execution, the robot servo does not
+      turn off.'
