@@ -1193,6 +1193,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects:
   - {fileID: 0}
+  _needToSwitchBoxState: 0
 --- !u!1 &659286565442547417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,6 +1205,7 @@ GameObject:
   - component: {fileID: 659286565442547416}
   - component: {fileID: 659286565442547364}
   - component: {fileID: 659286565442547419}
+  - component: {fileID: 2643878337463070439}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -1363,6 +1365,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &2643878337463070439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659286565442547417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_ScaleOn
+  _capitalize: 0
 --- !u!1 &659286565558670422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3730,6 +3747,7 @@ GameObject:
   - component: {fileID: 1465049359075472283}
   - component: {fileID: 1465049359075472359}
   - component: {fileID: 1465049359075472280}
+  - component: {fileID: 4412598049435731793}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -3889,6 +3907,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &4412598049435731793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465049359075472282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_Controller
+  _capitalize: 0
 --- !u!1 &1465049359194736917
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,6 +5119,7 @@ GameObject:
   - component: {fileID: 2229695540126552663}
   - component: {fileID: 2229695540126552662}
   - component: {fileID: 2229695540126552616}
+  - component: {fileID: 8752252894800762930}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -5253,6 +5287,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &8752252894800762930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229695540126552618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_ScaleOff
+  _capitalize: 0
 --- !u!1 &2229695540246358181
 GameObject:
   m_ObjectHideFlags: 0
@@ -5876,6 +5925,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects:
   - {fileID: 0}
+  _needToSwitchBoxState: 0
 --- !u!1 &2400858577409725760
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,6 +7483,7 @@ GameObject:
   - component: {fileID: 3147066399827405421}
   - component: {fileID: 3147066399827405420}
   - component: {fileID: 3147066399827405330}
+  - component: {fileID: 6178720067812356427}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -7600,6 +7651,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &6178720067812356427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3147066399827405328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_TipsOn
+  _capitalize: 0
 --- !u!1 &3181053189989426159
 GameObject:
   m_ObjectHideFlags: 0
@@ -16927,6 +16993,7 @@ GameObject:
   - component: {fileID: 7351048741721950582}
   - component: {fileID: 7351048741721950474}
   - component: {fileID: 7351048741721950581}
+  - component: {fileID: 69805811931502341}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -17086,6 +17153,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &69805811931502341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7351048741721950583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_TipsOff
+  _capitalize: 0
 --- !u!1 &7351048741904151544
 GameObject:
   m_ObjectHideFlags: 0
@@ -20983,6 +21065,7 @@ GameObject:
   - component: {fileID: 8673249810538523809}
   - component: {fileID: 8673249810538523869}
   - component: {fileID: 8673249810538523810}
+  - component: {fileID: 5287989521642621102}
   m_Layer: 0
   m_Name: TextMeshPro
   m_TagString: Untagged
@@ -21142,6 +21225,21 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
+--- !u!114 &5287989521642621102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673249810538523808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a09e64a0e4994824a888fda0455199c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _textType: 1
+  _key: MenuPrefab_Button_Robot
+  _capitalize: 0
 --- !u!1 &8673249810690823727
 GameObject:
   m_ObjectHideFlags: 0

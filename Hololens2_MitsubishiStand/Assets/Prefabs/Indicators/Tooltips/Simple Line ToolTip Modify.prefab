@@ -175,7 +175,7 @@ MonoBehaviour:
     position: {x: 0, y: 0, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
   endPoint:
-    position: {x: 0, y: 0.24576484, z: 0}
+    position: {x: 0, y: 0.23371094, z: 0}
     rotation: {x: 0, y: 0, z: 0, w: 1}
 --- !u!114 &114570207066485496
 MonoBehaviour:
@@ -325,7 +325,7 @@ LineRenderer:
   m_SortingOrder: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0.24576484, z: 0}
+  - {x: 0, y: 0.23371094, z: 0}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.01
