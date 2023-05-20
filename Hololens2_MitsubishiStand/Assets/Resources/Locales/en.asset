@@ -64,7 +64,7 @@ MonoBehaviour:
   - Key: ToolTip_Objects_AutomatedCS
     Value: "Automated control system\r"
   - Key: ToolTip_Objects_Workspaces
-    Value: Workspaces
+    Value: "Workspaces\r"
   - Key: ToolTip_Controller_Key
     Value: "Operation mode switch. Manual for using the control panel and automatic
       for performing operations from the controller or other equipment.\r"
@@ -98,5 +98,68 @@ MonoBehaviour:
   - Key: ToolTip_Controller_Start
     Value: "\"START\" button: used to start the robot control program.\r"
   - Key: ToolTip_Controller_Stop
-    Value: '"STOP" button: stops the program execution, the robot servo does not
-      turn off.'
+    Value: "\"STOP\" button: stops the program execution, the robot servo does not
+      turn off.\r"
+  - Key: InfoRobot_Title
+    Value: "Mitsubishi RV-3SDB Robot Arm\r"
+  - Key: InfoRobot_Column1_T1
+    Value: "Mitsubishi MELFA RV-3SDB is convenient for integration into technological
+      areas with limited workspace. When developing robots of this series, special
+      attention was paid to the simplicity of their integration into existing technological
+      sites.\r"
+  - Key: InfoRobot_Column1_T2
+    Value: "Technical data of the robot manipulator:\r"
+  - Key: InfoRobot_Column1_T3
+    Value: "\uF0A7 Load capacity - 3.5 kg \uF0A7 Working area radius - 727 mm \uF0A7
+      The accuracy of repeating operations - 0.02 mm \uF0A7 The accuracy of repeating
+      operations - 0.02 mm\"\r"
+  - Key: InfoRobot_Column2_T1
+    Value: "Mitsubishi Electric's RV-3SDB robot has six degrees of mobility.\r"
+  - Key: InfoRobot2_Title
+    Value: "Axes of rotation of the robot manipulator\r"
+  - Key: InfoRobot2_Text
+    Value: "Use this menu to control the Mitsubishi robot manipulator.\r"
+  - Key: InfoController_Title
+    Value: "Mitsubishi CR-1 controller\r"
+  - Key: InfoController_Column1_T1
+    Value: "The compact, modular robot control controller is an integral part of
+      the robotic system. It contains a central processor and power electrics for
+      power supply and control of the robot.\r"
+  - Key: InfoController_Column1_T2
+    Value: "Advantages of this model:\r"
+  - Key: InfoController_Column1_T3
+    Value: "\uF0A7 Small installation area; \uF0A7 Digital information processing
+      capabilities that allow you to run up to 32 programs together, working in parallel;
+      \uF0A7 Large program memory - the controller can store up to 88 independent
+      programs, each of which can access the other, for example, when different products
+      require different control programs.\"\r"
+  - Key: InfoController_Column2_T1
+    Value: "Technical data of the controller\r"
+  - Key: InfoController_Column2_T2
+    Value: "\uF0A7 Processor - 64-bit RISC + DSP \uF0A7 The maximum number of programs
+      is 88 \uF0A7 The maximum number of program steps is 5000 \uF0A7 The maximum
+      number of training points is 2500 \uF0A7 Built-in inputs/outputs - 16 In/16
+      Out \uF0A7 Safety Functions - Emergency switch \uF0A7 Power consumption - 0.7
+      kVA \uF0A7 Operating temperature - 0 \u2013 40 C \uF0A7 Dimensions - 212 x
+      166 x 290 mm\"\r"
+  - Key: InfoControllerMini_Title
+    Value: "Mitsubishi CR-1 controller\r"
+  - Key: InfoControllerMini_InfoButton
+    Value: "More detailed\r"
+  - Key: InfoControllerMini_Column1_T1
+    Value: "MELFA robot controllers are small and compact. The size of the controllers
+      is close to the size of standard PCs, and they can also be installed in limited
+      conditions without taking up valuable production space. Thanks to the multitasking
+      operating system and the MELFA BASIC programming language, they are easy to
+      use to control other elements of the system.\r"
+  - Key: InfoRobotMini_Title
+    Value: "Mitsubishi RV-3SDB Robot Arm\r"
+  - Key: InfoRobotMini_InfoButton
+    Value: "More detailed\r"
+  - Key: InfoRobotMini_Column1_T1
+    Value: 'A robot manipulator is a type of industrial robots. Such robots perform
+      the functions of a human hand. The connections of the manipulator segments
+      allow rotational and translational movements. Robots can recognize, understand
+      and change the environment. Their field of activity is expanding every year.
+      New programs are being introduced, robots can perform more and more precise
+      actions: collect cars, sort garbage, select and replace the necessary components.'
