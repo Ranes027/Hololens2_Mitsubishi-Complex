@@ -6,23 +6,45 @@ namespace MitsubishiAR.Components.Object.States
     {
         [SerializeField] private GameObject[] _objects;
 
-        public void Active()
+        public void SwitchActiveCondition()
         {
-            ChangeState(_objects);
+            foreach (var obj in _objects)
+            {
+                obj.SetActive(!obj.activeSelf);
+            }
         }
 
-        public static void ChangeState(GameObject[] objects)
+        public void SwitchActiveCondition(bool state)
         {
-            for (int i = 0; i < objects.Length; i++)
+            foreach (var obj in _objects)
             {
-                if (objects[i].activeSelf == true)
-                {
-                    objects[i].SetActive(false);
-                }
-                else
-                {
-                    objects[i].SetActive(true);
-                }
+                obj.SetActive(state);
+            }
+        }
+
+        public static void SwitchActiveCondition(GameObject gameObject)
+        {
+            gameObject.SetActive(!gameObject.activeSelf);
+        }
+
+        public static void SwitchActiveCondition(GameObject gameObject, bool state)
+        {
+            gameObject.SetActive(state);
+        }
+
+        public static void SwitchActiveCondition(GameObject[] gameObjects)
+        {
+            foreach (var obj in gameObjects)
+            {
+                obj.SetActive(!obj.activeSelf);
+            }
+        }
+
+        public static void SwitchActiveCondition(GameObject[] gameObjects, bool state)
+        {
+            foreach (var obj in gameObjects)
+            {
+                obj.SetActive(state);
             }
         }
     }

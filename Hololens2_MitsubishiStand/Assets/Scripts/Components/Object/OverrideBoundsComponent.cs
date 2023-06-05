@@ -10,15 +10,12 @@ namespace MitsubishiAR.Components.Object
         [SerializeField] private GameObject _mainObject;
         [SerializeField] private GameObject _targetObject;
 
-        [SerializeField] private UnityEvent _action;
-
         public void OverrideBounds()
         {
             var obj = _mainObject.GetComponent<BoundsControl>();
 
             if (obj != null)
             {
-                CheckScalingState();
                 CheckMainObjectCollider();
                 CheckOverridesState();
 
@@ -27,16 +24,6 @@ namespace MitsubishiAR.Components.Object
             else
             {
                 Debug.Log("Can't find BoundsControl!");
-            }
-        }
-
-        private void CheckScalingState()
-        {
-            var bounds = _mainObject.GetComponent<BoundsControl>();
-
-            if (bounds.enabled == true)
-            {
-                _action?.Invoke();
             }
         }
 
@@ -52,14 +39,7 @@ namespace MitsubishiAR.Components.Object
 
         private void CheckOverridesState()
         {
-            if (_mainObject == _targetObject)
-            {
-                SceneConstants.Instance.SceneInfo.BoundsOverrides = false;
-            }
-            else
-            {
-                SceneConstants.Instance.SceneInfo.BoundsOverrides = true;
-            }
+            SceneConstants.Instance.SceneInfo.BoundsOverrides = !(_mainObject == _targetObject);
         }
     }
 }
