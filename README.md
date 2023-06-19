@@ -22,7 +22,7 @@ This app focuses on augmented reality technologies and their potential implement
 
 **On the headset**
 
-![OnHeadset](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/622f8756-d883-499b-8467-fc164e06558b)
+![OnHeadset]![newnew](https://github.com/Ranes027/Hololens2_Mitsubishi-Complex/assets/95719172/0ad5ed41-4c79-4827-9060-ac70aef05480)
 
 ## 💁 Contributing
 
