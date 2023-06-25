@@ -138,7 +138,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3.2
+  bundleVersion: 0.3.3
   preloadedAssets:
   - {fileID: 0}
   - {fileID: 0}
@@ -635,11 +635,21 @@ PlayerSettings:
   metroCertificateNotAfter: 00edbadc125ada01
   metroApplicationDescription: AR instruction for Mitsubishi Robotic Complex
   wsaImages:
-    65636: Assets/Textures/Icons/AppIcon/[50x50]ATPP_Logo.png
-    65661: Assets/Textures/Icons/AppIcon/[63x63]ATPP_Logo.png
-    65686: Assets/Textures/Icons/AppIcon/[75x75]ATPP_Logo.png
-    65736: Assets/Textures/Icons/AppIcon/[100x100]ATPP_Logo.png
-    65936: Assets/Textures/Icons/AppIcon/[200x200]ATPP_Logo.png
+    65636: Assets/UI/AppIcon/[50x50]ATPP_Logo.png
+    65661: Assets/UI/AppIcon/[63x63]ATPP_Logo.png
+    65686: Assets/UI/AppIcon/[75x75]ATPP_Logo.png
+    65736: Assets/UI/AppIcon/[100x100]ATPP_Logo.png
+    65936: Assets/UI/AppIcon/[200x200]ATPP_Logo.png
+    131272: Assets/UI/LoadScreen/[1240x600] Mining_University_Logo.png
+    2031640: Assets/UI/AppIcon/TilesAndLogos/[24x24] ATPP_Logo.png
+    2031716: Assets/UI/AppIcon/TilesAndLogos/[44x44] ATPP_Logo.png
+    2031816: Assets/UI/AppIcon/TilesAndLogos/[88x88] ATPP_Logo.png
+    2097252: Assets/UI/AppIcon/TilesAndLogos/[71x71] ATPP_Logo.png
+    2097352: Assets/UI/AppIcon/TilesAndLogos/[142x142] ATPP_Logo.png
+    2162788: Assets/UI/AppIcon/TilesAndLogos/[150x150] ATPP_Logo.png
+    2162888: Assets/UI/AppIcon/TilesAndLogos/[300x300] ATPP_Logo.png
+    2293860: Assets/UI/AppIcon/TilesAndLogos/[310x150] ATPP_Logo.png
+    2293960: Assets/UI/AppIcon/TilesAndLogos/[620x300] ATPP_Logo.png
   metroTileShortName: MitsubishiAR
   metroTileShowName: 0
   metroMediumTileShowName: 0
