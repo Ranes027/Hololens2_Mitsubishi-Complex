@@ -616,9 +616,8 @@ GameObject:
   - component: {fileID: 659286564989796138}
   - component: {fileID: 1521086224861587331}
   - component: {fileID: 7139601380901770514}
-  - component: {fileID: 4739064476066611208}
-  - component: {fileID: 4739064476066611209}
   - component: {fileID: 4739064476066611314}
+  - component: {fileID: 72580928}
   m_Layer: 0
   m_Name: ScaleOn
   m_TagString: Untagged
@@ -817,33 +816,22 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064476066611208}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476066611209}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 4739064476066611314}
         m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
         m_MethodName: ChangeScalingState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 72580928}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1151,34 +1139,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064476066611208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659286564989796139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 2229695540747076568}
---- !u!114 &4739064476066611209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659286564989796139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 659286564989796139}
 --- !u!114 &4739064476066611314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1153,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects:
   - {fileID: 0}
-  _needToSwitchBoxState: 0
+  _needToSwitchBoxState: 1
+--- !u!114 &72580928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659286564989796139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 2229695540747076568}
+  _objectsToHide:
+  - {fileID: 659286564989796139}
 --- !u!1 &659286565442547417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3968,9 +3944,8 @@ GameObject:
   - component: {fileID: 1465049359696519785}
   - component: {fileID: 606117737334700736}
   - component: {fileID: 9108058155680614481}
-  - component: {fileID: 4739064477003661470}
-  - component: {fileID: 4739064477003661471}
   - component: {fileID: 4739064476066215843}
+  - component: {fileID: 2111124729}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -4169,21 +4144,9 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064477003661471}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064477003661470}
-        m_TargetAssemblyTypeName: MitubishiAR.Component.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
+      - m_Target: {fileID: 4739064476066215843}
+        m_TargetAssemblyTypeName: OverrideBoundsComponent, Assembly-CSharp
+        m_MethodName: OverrideBounds
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4193,9 +4156,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4739064476066215843}
-        m_TargetAssemblyTypeName: OverrideBoundsComponent, Assembly-CSharp
-        m_MethodName: OverrideBounds
+      - m_Target: {fileID: 2111124729}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4503,40 +4467,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064477003661470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465049359696519784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626461753241}
-  - {fileID: 0}
---- !u!114 &4739064477003661471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1465049359696519784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626387371614}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &4739064476066215843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4551,45 +4481,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainObject: {fileID: 0}
   _targetObject: {fileID: 0}
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4739064476493660847}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660822}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660824}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
-        m_MethodName: ChangeScalingState
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &2111124729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465049359696519784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 0}
+  - {fileID: 5491277626461753241}
+  - {fileID: 0}
+  _objectsToHide:
+  - {fileID: 0}
+  - {fileID: 5491277626387371614}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &1580385477191411333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5348,9 +5261,8 @@ GameObject:
   - component: {fileID: 2229695540747076569}
   - component: {fileID: 201749630868429680}
   - component: {fileID: 8413793122671012321}
-  - component: {fileID: 4739064476493660847}
-  - component: {fileID: 4739064476493660822}
   - component: {fileID: 4739064476493660824}
+  - component: {fileID: 1124543930}
   m_Layer: 0
   m_Name: ScaleOff
   m_TagString: Untagged
@@ -5549,33 +5461,22 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064476493660847}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660822}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4739064476493660824}
         m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
         m_MethodName: ChangeScalingState
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1124543930}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5883,34 +5784,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064476493660847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2229695540747076568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 2229695540747076568}
---- !u!114 &4739064476493660822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2229695540747076568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 659286564989796139}
 --- !u!114 &4739064476493660824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5925,7 +5798,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _objects:
   - {fileID: 0}
-  _needToSwitchBoxState: 0
+  _needToSwitchBoxState: 1
+--- !u!114 &1124543930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229695540747076568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 2229695540747076568}
+  _objectsToHide:
+  - {fileID: 659286564989796139}
 --- !u!1 &2400858577409725760
 GameObject:
   m_ObjectHideFlags: 0
@@ -6845,8 +6734,7 @@ GameObject:
   - component: {fileID: 4004010443834729290}
   - component: {fileID: 4728238876360806875}
   - component: {fileID: 4739064475483722273}
-  - component: {fileID: 4739064475483722274}
-  - component: {fileID: 4739064475483722275}
+  - component: {fileID: 410642242}
   m_Layer: 0
   m_Name: TipsOn
   m_TagString: Untagged
@@ -7058,21 +6946,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 4739064475483722275}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 4739064475483722274}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
+      - m_Target: {fileID: 410642242}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7413,7 +7290,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &4739064475483722274
+--- !u!114 &410642242
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7422,24 +7299,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3147066399239912418}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects:
+  _objectsToShow:
   - {fileID: 7351048742343006341}
---- !u!114 &4739064475483722275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3147066399239912418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
+  _objectsToHide:
   - {fileID: 3147066399239912418}
 --- !u!1 &3147066399678763167
 GameObject:
@@ -13925,9 +13790,9 @@ MonoBehaviour:
   _objects:
   - {fileID: 0}
   - {fileID: 0}
-  _xScale: 1
-  _yScale: 1
-  _zScale: 1
+  _xScale: 1.25
+  _yScale: 1.25
+  _zScale: 1.25
 --- !u!1 &5491277626387371614
 GameObject:
   m_ObjectHideFlags: 0
@@ -13944,9 +13809,8 @@ GameObject:
   - component: {fileID: 5491277626387371615}
   - component: {fileID: 5767234907892125430}
   - component: {fileID: 2739978490562493543}
-  - component: {fileID: 4739064475962769175}
-  - component: {fileID: 4739064475962769176}
   - component: {fileID: 4739064476709981270}
+  - component: {fileID: 1004414730361852788}
   m_Layer: 0
   m_Name: Back
   m_TagString: Untagged
@@ -14145,33 +14009,22 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064475962769175}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 4739064475962769176}
-        m_TargetAssemblyTypeName: MitubishiAR.Component.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 4739064476709981270}
         m_TargetAssemblyTypeName: OverrideBoundsComponent, Assembly-CSharp
         m_MethodName: OverrideBounds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1004414730361852788}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14423,37 +14276,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064475962769175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5491277626387371614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626387371614}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &4739064475962769176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5491277626387371614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
 --- !u!114 &4739064476709981270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14468,45 +14290,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainObject: {fileID: 0}
   _targetObject: {fileID: 0}
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4739064476493660847}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660822}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660824}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
-        m_MethodName: ChangeScalingState
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &1004414730361852788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5491277626387371614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 0}
+  _objectsToHide:
+  - {fileID: 0}
+  - {fileID: 5491277626387371614}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &5491277626461753241
 GameObject:
   m_ObjectHideFlags: 0
@@ -14523,9 +14325,8 @@ GameObject:
   - component: {fileID: 5491277626461753240}
   - component: {fileID: 5767234908321191729}
   - component: {fileID: 2739978492298077600}
-  - component: {fileID: 4739064476819532077}
-  - component: {fileID: 4739064476819532052}
   - component: {fileID: 4739064476702351548}
+  - component: {fileID: 1004414731025402552}
   m_Layer: 0
   m_Name: Back [2]
   m_TagString: Untagged
@@ -14724,33 +14525,22 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064476819532077}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476819532052}
-        m_TargetAssemblyTypeName: MitubishiAR.Component.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4739064476702351548}
         m_TargetAssemblyTypeName: OverrideBoundsComponent, Assembly-CSharp
         m_MethodName: OverrideBounds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1004414731025402552}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15002,36 +14792,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064476819532077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5491277626461753241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626461753241}
-  - {fileID: 0}
---- !u!114 &4739064476819532052
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5491277626461753241}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
 --- !u!114 &4739064476702351548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15046,45 +14806,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainObject: {fileID: 0}
   _targetObject: {fileID: 0}
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4739064476493660847}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660822}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660824}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
-        m_MethodName: ChangeScalingState
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &1004414731025402552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5491277626461753241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 0}
+  _objectsToHide:
+  - {fileID: 0}
+  - {fileID: 5491277626461753241}
+  - {fileID: 0}
 --- !u!1 &5491277626465819409
 GameObject:
   m_ObjectHideFlags: 0
@@ -17214,9 +16953,8 @@ GameObject:
   - component: {fileID: 7351048742343006340}
   - component: {fileID: 8807230652934373421}
   - component: {fileID: 880066568061547196}
-  - component: {fileID: 4739064475057182033}
   - component: {fileID: 4739064475057182034}
-  - component: {fileID: 4739064475057182040}
+  - component: {fileID: 858929161}
   m_Layer: 0
   m_Name: TipsOff
   m_TagString: Untagged
@@ -17428,21 +17166,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 4739064475057182033}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064475057182040}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
+      - m_Target: {fileID: 858929161}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17750,20 +17477,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 621981f20d99d3d45b96b8d15696293d, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064475057182033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7351048742343006341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 7351048742343006341}
 --- !u!114 &4739064475057182034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17797,7 +17510,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &4739064475057182040
+--- !u!114 &858929161
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17806,11 +17519,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7351048742343006341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _objects:
+  _objectsToShow:
   - {fileID: 3147066399239912418}
+  _objectsToHide:
+  - {fileID: 7351048742343006341}
 --- !u!1 &7351048742897415209
 GameObject:
   m_ObjectHideFlags: 0
@@ -18573,7 +18288,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7714260155480305929}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.212, z: 0.539}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
@@ -20432,9 +20147,8 @@ GameObject:
   - component: {fileID: 8673249809917541715}
   - component: {fileID: 7232825808243516922}
   - component: {fileID: 1328323005699676011}
-  - component: {fileID: 4739064476256970505}
-  - component: {fileID: 4739064476256970608}
   - component: {fileID: 4739064476510445065}
+  - component: {fileID: 2059205290}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -20633,33 +20347,22 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4739064476256970505}
-        m_TargetAssemblyTypeName: MitubishiAR.Component.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476256970608}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 4739064476510445065}
         m_TargetAssemblyTypeName: OverrideBoundsComponent, Assembly-CSharp
         m_MethodName: OverrideBounds
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2059205290}
+        m_TargetAssemblyTypeName: MitsubishiAR.Components.Object.ObjectVisibilityManager,
+          Assembly-CSharp
+        m_MethodName: ToggleObjectsVisibility
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -20967,40 +20670,6 @@ MonoBehaviour:
   defaultButtonQuadMaterial: {fileID: 2100000, guid: fa419ab56051229449e3b813df8f295f, type: 2}
   iconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
   defaultIconSet: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
---- !u!114 &4739064476256970505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8673249809917541714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac8b7a8da20cead4b81ac258c429cc8a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626387371614}
-  - {fileID: 0}
-  - {fileID: 0}
---- !u!114 &4739064476256970608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8673249809917541714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5da452f276d1a0a4fa26310565ca6134, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objects:
-  - {fileID: 0}
-  - {fileID: 5491277626461753241}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &4739064476510445065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21015,45 +20684,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainObject: {fileID: 0}
   _targetObject: {fileID: 0}
-  _action:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 4739064476493660847}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.HideObjectsComponent, Assembly-CSharp
-        m_MethodName: Hide
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660822}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ShowObjectsComponent, Assembly-CSharp
-        m_MethodName: Show
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4739064476493660824}
-        m_TargetAssemblyTypeName: MitubishiAR.Components.ScalingStateComponent, Assembly-CSharp
-        m_MethodName: ChangeScalingState
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &2059205290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8673249809917541714}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d4ba89fa6435d547a5d48d77fcb8cb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectsToShow:
+  - {fileID: 0}
+  - {fileID: 5491277626387371614}
+  - {fileID: 0}
+  - {fileID: 0}
+  _objectsToHide:
+  - {fileID: 0}
+  - {fileID: 5491277626461753241}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &8673249810538523808
 GameObject:
   m_ObjectHideFlags: 0
