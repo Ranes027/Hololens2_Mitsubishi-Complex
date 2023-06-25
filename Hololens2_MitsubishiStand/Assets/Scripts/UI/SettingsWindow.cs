@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using MitsubishiAR.Model.Data;
 using MitsubishiAR.Model.Localization;

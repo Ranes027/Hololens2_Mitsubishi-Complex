@@ -1,7 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
 namespace MitsubishiAR.Model.Data
 {
     public abstract class PrefsPersistentProperty<TPropertyType> : PersistentProperty<TPropertyType>
